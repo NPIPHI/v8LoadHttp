@@ -17,7 +17,7 @@ static void set_runtime_window(v8Runtime *runtime, std::string url, int port, st
     runtime->add_script(script_src, "");
 }
 
-void LiveServer::load_http(v8Runtime * runtime, std::string url, int port, std::string subdomain) {
+void LoadHttp::load_http(v8Runtime * runtime, std::string url, int port, std::string subdomain) {
     static std::regex script_regex(R"(< *script *src *= *\"(.+)\"> *< */ *script *>)");
     static std::regex inline_script_regex(R"(< *script *(?:type *= *\".+\" *)>((.*\n)+)< */ *script *>)");
     runtime->reset_global_context();

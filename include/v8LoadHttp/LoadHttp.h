@@ -8,7 +8,7 @@
 #include <v8Core/v8Runtime.h>
 #include <string>
 
-namespace LiveServer {
+namespace LoadHttp {
     /*
      * loads javascript files from a url
      * expects a .html file with <script> tags that define which scripts to load
