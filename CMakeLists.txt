@@ -8,4 +8,6 @@ add_library(v8LoadHttp STATIC
 
 add_dependencies(v8LoadHttp AndriodWebsocket v8Core)
 
+target_include_directories(v8LoadHttp include)
+
 target_link_libraries(v8LoadHttp AndriodWebsocket v8Core)
